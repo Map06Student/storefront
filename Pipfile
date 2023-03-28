@@ -17,6 +17,7 @@ whitenoise = "*"
 gunicorn = "*"
 dj-database-url = "*"
 django-filter = "*"
+djangorestframework = "*"
 
 [dev-packages]
 pytest = "*"
