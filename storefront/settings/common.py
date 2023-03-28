@@ -168,8 +168,6 @@ SIMPLE_JWT = {
     'ACCESS_TOKEN_LIFETIME': timedelta(days=1),
 }
 
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-
 EMAIL_HOST = 'localhost'  # The address of our SMTP server
 
 EMAIL_HOST_USER = ''  # The user name for our SMTP server (optional)
@@ -184,23 +182,12 @@ ADMINS = [
     ('MAPStudent', 'admin@mapstudent.com')
 ]
 
-CELERY_BROKER_URL = 'redis://localhost:6379/1'
+
 CELERY_BEAT_SCHEDULE = {
     'notify_customers' : {
         'task': 'playground.tasks.notify_customers',
         'schedule': 5,
         'args': ['Hello World']
-    }
-}
-
-CACHES = {
-    "default": {
-        "BACKEND": "django_redis.cache.RedisCache",
-        "LOCATION": "redis://127.0.0.1:6379/2",
-        "TIMEOUT": 10 * 60,
-        "OPTIONS": {
-            "CLIENT_CLASS": "django_redis.client.DefaultClient",
-        }
     }
 }
 
