@@ -6,7 +6,7 @@
 - Setting up and using MySQL
 - Querying and manipulating data using Django ORM
 - Worked with class-based views
-- Securing APIs with JSON Web Tokens (JWT)
+- Secured API with JSON Web Tokens (JWT)
 - Using signals to decouple apps
 - Built an API to upload files
 - Wrote automated tests with PyTest
