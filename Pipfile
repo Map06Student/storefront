@@ -18,6 +18,7 @@ gunicorn = "*"
 dj-database-url = "*"
 django-filter = "*"
 djangorestframework = "*"
+djoser = "*"
 
 [dev-packages]
 pytest = "*"
