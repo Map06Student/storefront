@@ -19,6 +19,7 @@ dj-database-url = "*"
 django-filter = "*"
 djangorestframework = "*"
 djoser = "*"
+django-silk = "*"
 
 [dev-packages]
 pytest = "*"
