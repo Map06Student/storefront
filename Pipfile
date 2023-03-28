@@ -21,6 +21,7 @@ djangorestframework = "*"
 djoser = "*"
 django-silk = "*"
 mysqlclient = "*"
+drf-nested-routers = "*"
 
 [dev-packages]
 pytest = "*"
